@@ -50,6 +50,7 @@ def apply_rotation_3d(pos, center, omega, dt):
     return center + r_rot
 
 def apply_rotation_2d_simple(x, y, center, omega_z, dt):
+    """Apply 2D rotation transformation to predict future event position"""
     r = np.array([x, y, 0]) - center
     theta = omega_z * dt
     rot = np.array([
@@ -95,7 +96,7 @@ def main():
         std_radii_diff = np.std(radii_diff)
         print(f"Average change in radius: {avg_radii_diff:.4f} ± {std_radii_diff:.4f} pixels (should be ~0)")
 
-        # --- Additional Rigorous Checks ---
+        
         print("\n--- Additional Rigorous Checks ---")
         # 1. Inverse Consistency Test
         errors = []

@@ -1,4 +1,73 @@
+# CSV data files
 sample.csv
 spin-dot_track.csv
-sample.csv
-spin-dot_track.csv
+*.csv
+!requirements.txt
+
+# Large numpy arrays
+*.npy
+
+# Video files
+*.mp4
+*.gif
+*.avi
+
+# Image files (results/visualizations)
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Results directories
+results/
+results_csv/
+results_plots/
+results_plots.zip
+main_results/
+dt_analysis_results/
+dt_tolerance_analysis_results/
+dt_tolerance_analysis_results_local/
+pixel_displacement_analysis/
+disc_analysis/
+
+# Data directories
+AEB_tracker/
+window_predictions/
+frames_out/
+aws_job/
+sweeps/
+
+# Cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Misc data files
+*.jar
+*.txt
+!requirements.txt
+!DT_ANALYSIS_README.md
+!MATHEMATICAL_FIXES_SUMMARY.md
+!thesis_verification_report.md
+!final_slide.md
+gridspec
+np
+os
+time
+plt
+0
+0]
+
+# BFG Repo Cleaner
+..bfg-report/
